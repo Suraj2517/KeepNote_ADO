@@ -69,7 +69,7 @@ namespace KeepNote_ADO
             SqlDataAdapter adp = new SqlDataAdapter($"Select * from Note where Id = {Id}", con);
             DataSet ds = new DataSet();
             adp.Fill(ds);
-         
+
             Console.WriteLine("Enter Title:");
             string title = Console.ReadLine();
             Console.WriteLine("Enter Description");
@@ -151,7 +151,7 @@ namespace KeepNote_ADO
                 }
                 Console.WriteLine("Do you wish to continue? [y/n] ");
                 ans = Console.ReadLine();
-            } while (ans.ToLower() == "y") ;
+            } while (ans.ToLower() == "y");
         }
     }
 }
